@@ -25,7 +25,7 @@ class CreateVideosTable extends Migration
             $table->string('m3u8')->default('')->comment('m3u8文件');
             $table->string('original_mp4')->comment('原mp4文件')->default('');
             $table->string('mp4')->comment('MP4文件')->default('');
-            $table->integer('long')->comment('时长')->default(0);
+            $table->integer('long')->comment('时长,秒数')->default(0);
             $table->integer('see_num')->comment('观看次数')->default(0);
             $table->string('tag_ids')->comment('标签id')->default('');
             $table->tinyInteger('need_charge')->comment('是否需要充值,1.需要，0.不需要')->default(0);

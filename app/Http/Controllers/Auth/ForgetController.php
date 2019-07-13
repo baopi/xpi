@@ -3,13 +3,11 @@ namespace App\Http\Controllers\Auth;
 
 use App\Services\Auth\ParseValidators\ResetPasswordToFindPassword as ResetPasswordValidator;
 use App\Services\Auth\Tasks\ResetPasswordToFindPassword;
-use App\Services\Redis\Key;
 use App\Tools\Fomatter\End;
 use Illuminate\Http\Request;
 use App\Services\Auth\ParseValidators\SendCodeToFindPassword as SendCodeValidator;
 use App\Services\Auth\Tasks\SendCodeToFindPassword;
 use App\Services\ServiceCaller;
-use Illuminate\Support\Facades\Cache;
 
 class ForgetController
 {
